@@ -1,0 +1,45 @@
+body {
+  background-color: #333f50;
+  margin: 0;
+}
+
+
+/* Style for the header */
+header {
+  background-color: #4d5f78;
+  text-align: center;
+}
+
+/* Style for the header h1 */
+header h1 {
+  margin: 0;
+}
+
+/* Style for the header h1 a */
+header h1 a {
+  color: #82cffd;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Style for the navigation menu */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 10;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+/* Style for the navigation links */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
