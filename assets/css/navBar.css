@@ -36,6 +36,12 @@ a{
     font-size: 2rem;
 }
 
+.nav-item{
+    background-color: #313131;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+
 .nav-link{
     transition: 0.7s ease;
 }
