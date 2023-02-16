@@ -1,15 +1,13 @@
-var hamburger = document.querySelector('.hamburger');
-var navMenu = document.querySelector('.nav-menu');
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
 
-hamburger.addEventListener('click', function() {
+hamburger.addEventListener('click', () => {
+    console.log('button clicked');
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
 });
 
-var navLinks = document.querySelectorAll('.nav-link');
-for (var i = 0; i < navLinks.length; i++) {
-    navLinks[i].addEventListener('click', function() {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-    });
-}
+document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+}));
