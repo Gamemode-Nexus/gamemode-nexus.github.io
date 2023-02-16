@@ -7,7 +7,6 @@ body {
 
 /* Style for the header */
 header {
-  background: #4d5f78;
   padding: 20px 40px;
 }
 
@@ -24,10 +23,11 @@ header h1 a {
   padding: 0;
   list-style-type: none;
   display: inline-block;
-  background: #333f50;
+  background: #4d5f78;
   border-radius: 5px;
   padding: 2px;
   margin-left: 20px;
+  font-size: 18px;
 }
 
 header a {
@@ -37,17 +37,36 @@ header a {
 }
 
 #menu-button:hover {
+  text-decoration: underline;
   background: #c7c7cc;
+  font-size: 18px;
+}
+
+#banner {
+  text-align: center;
+}
+
+#banner img {
+  max-width: 100%;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+/* Style for sections */
+section {
+  padding: 20px;
+  color: white;
 }
 
 /* Style for the footer */
 footer {
-  background: #4d5f78;
+  border-top: 1px solid #c7c7cc;
   color: #82cffd;
   padding: 20px 20px;
-}
-
-.footer-small {
-  color: white;
-  font-size: 11px;
 }
