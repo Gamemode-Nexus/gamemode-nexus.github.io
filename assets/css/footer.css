@@ -1,0 +1,17 @@
+body {
+    position: relative;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    padding: 20px 20px;
+    background-color: #262626
+}
+.footer .large-text {
+    color: #FFFFFF;
+}
