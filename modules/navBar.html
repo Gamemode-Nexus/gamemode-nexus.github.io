@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="../assets/css/navBar.css">
+
+
+<a href="#" class="nav-branding">Gamemode Nexus</a>
+
+<ul class="nav-menu">
+    <li class="nav-item">
+        <a href="#" class="nav-link">Wiki</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Issues</a>
+    </li>
+</ul>
+<div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        console.log('button clicked');
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    }));
+</script>
