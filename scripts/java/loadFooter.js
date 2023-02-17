@@ -3,5 +3,5 @@ fetch('../../modules/footer.html')
   .then(res => res.text())
   .then(data => {
     footer.innerHTML = data;
-    console.log('navbar footer');
+    console.log('footer loaded');
   });

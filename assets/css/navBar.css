@@ -6,13 +6,14 @@
 
 header{
     background: #262626;
+    text-transform: uppercase;
 }
 
-li{
+.navbar li{
     list-style: none
 }
 
-a{
+.navbar a{
     color:#ffffff;
     text-decoration: none;
 }
@@ -69,7 +70,7 @@ a{
     .hamburger{
         display: block;
     }
-    
+
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
     }
@@ -79,7 +80,7 @@ a{
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-    
+
     .nav-menu{
         position: fixed;
         left: -100%;
@@ -93,11 +94,11 @@ a{
         border-top: 1px;
         border-color: #FFFFFF;
     }
-    
+
     .nav-item{
         margin: 16px 0;
     }
-    
+
     .nav-menu.active{
         left: 0;
     }

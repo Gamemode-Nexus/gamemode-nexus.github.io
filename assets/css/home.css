@@ -1,0 +1,68 @@
+.landing{
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 padding: 0 24px;
+}
+
+.landing h2{
+	 color: #FFFFFF;
+	 text-transform: uppercase;
+}
+
+.landing li{
+	 list-style: none;
+}
+
+.landing a{
+	 color: #FFFFFF;
+	 text-decoration: none
+}
+
+.landing p{
+	 padding-top: 10px;
+}
+
+.download-item{
+	 padding: 10px;
+}
+
+.download-link{
+    transition: 0.7s ease;
+}
+
+.download-link:hover{
+    color: #1E90FF;
+}
+
+.datapack-link{
+	 min-width: 200px;
+	 background-color: #0000FF;
+	 border-radius: 5px;
+	 padding: 4px 54px;
+}
+
+.resources-link{
+	 background-color: #FF0000;
+	 border-radius: 5px;
+	 padding: 4px 50px;
+}
+
+.lan-info{
+	 display: flex;
+	 padding: 0 24px;
+	 flex-direction: column;
+	 background-color: #262626;
+	 border-radius: 20px;
+	 padding: 20px 10px;
+}
+
+.lan-download{
+	 display: flex;
+	 padding: 0 24px;
+	 flex-direction: column;
+	 background-color: #262626;
+	 border-radius: 20px;
+	 padding: 20px 10px;
+	 text-align: center;
+}
