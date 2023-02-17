@@ -1,22 +1,31 @@
+// Select the navbar div
+const navbar = document.querySelector(".navbar");
+
+// Create a new XMLHttpRequest object
 const xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
-    const navbar = document.getElementsByClassName("navbar")[0];
-    navbar.innerHTML = this.responseText;
-    const scriptTags = navbar.getElementsByTagName("script");
-    for (let i = 0; i < scriptTags.length; i++) {
-      if (scriptTags[i].src) {
-        const scriptTag = document.createElement("script");
-        scriptTag.src = scriptTags[i].src;
-        document.body.appendChild(scriptTag);
-      } else {
-        const scriptTag = document.createElement("script");
-        scriptTag.innerHTML = scriptTags[i].innerHTML;
-        document.body.appendChild(scriptTag);
-      }
-    }
+
+// Set the URL of the HTML file to load
+xhr.open("GET", "../../modules/navbar.html");
+
+// Define what happens when the file is loaded
+xhr.onload = function() {
+  // Check that the request was successful
+  if (xhr.status === 200) {
+    // Extract the HTML content from the response
+    const navbarHtml = xhr.responseText;
+
+    // Insert the HTML into the navbar div
+    navbar.insertAdjacentHTML("afterbegin", navbarHtml);
+
+    // Load the navBar.js script
+    const script = document.createElement("script");
+    script.src = "../scripts/java/navBar.js";
+    document.head.appendChild(script);
+
+    // Print a message to the console
+    console.log("navbar loaded");
   }
 };
-xhr.open("GET", "../modules/navbar.html", true);
+
+// Send the request to load the HTML file
 xhr.send();
-console.log('navbar loaded');
