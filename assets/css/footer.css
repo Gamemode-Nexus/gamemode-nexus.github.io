@@ -1,21 +1,21 @@
 footer {
-    position: fixed;
-    bottom: 0;
-    border-top: 1px;
-    border-color: #FFFFFF;
+	position: fixed;
+	bottom: 0;
+	border-top: 1px;
+	border-color: #FFFFFF;
 	width: 100dvw;
 }
 
-.footer {
-    padding: 20px 20px;
-    background-color: #262626
+	.footer {
+	padding: 20px 20px;
+	background-color: #262626
 }
 
-.footer .large-text {
-    color: #FFFFFF;
-    font-size: 13px;
+	.footer .large-text {
+	color: #FFFFFF;
+	font-size: 13px;
 }
 
-.footer .small-text {
-    font-size: 11px;
+	.footer .small-text {
+	font-size: 11px;
 }
